@@ -8,6 +8,29 @@
 
 拳头公司不提供国服游戏数据的 API 接口，只能使用[第三方平台](http://api.games-cube.com/)的接口。先到这个平台注册，获取一个只能维持一天的 Token，将 Token 写在 Get 方法的 Header 中去请求数据。
 
+## 目录
+
+```
+.
+|-- app.js
+|-- app.json
+|-- app.wxss
+|-- assets
+|   `-- demo.gif
+|-- pages     
+|   |-- index   # 主页
+|   |   |-- index.js
+|   |   |-- index.wxml
+|   |   `-- index.wxss
+|   `-- legends # 查询周免页
+|       |-- legends.js
+|       |-- legends.json
+|       |-- legends.wxml
+|       `-- legends.wxss
+`-- utils       # 工具
+    `-- util.js
+```
+
 ## Demo
 
 ![](./assets/demo.gif)
