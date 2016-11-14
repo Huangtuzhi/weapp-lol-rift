@@ -23,10 +23,15 @@ Riot Games 不提供国服游戏数据的 API 接口，只能使用[第三方平
 |   |   |-- index.wxml
 |   |   `-- index.wxss
 |   `-- legends # 查询周免页
-|       |-- legends.js
-|       |-- legends.json
-|       |-- legends.wxml
-|       `-- legends.wxss
+|   |   |-- legends.js
+|   |   |-- legends.json
+|   |   |-- legends.wxml
+|   |   `-- legends.wxss
+|   `-- battles # 查询战斗页
+|   |   |-- battles.js
+|   |   |-- battles.json
+|   |   |-- battles.wxml
+|   |   `-- battles.wxss
 `-- utils       # 工具
     `-- util.js
 ```
