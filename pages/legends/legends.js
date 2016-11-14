@@ -19,7 +19,7 @@ Page({
         vaid: 17,
       },
       header: {
-        'DAIWAN-API-TOKEN': '4006A-E1A71-6CDC6-C17AD'
+        'DAIWAN-API-TOKEN': app.getAccessToken(),
       },
       success: function (res) {
         var temLegends = [];

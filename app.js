@@ -6,7 +6,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
   },
-  getUserInfo:function(cb){
+  getUserInfo: function(cb){
     var that = this
     if(this.globalData.userInfo){
       typeof cb == "function" && cb(this.globalData.userInfo)
@@ -24,7 +24,16 @@ App({
       })
     }
   },
-  globalData:{
-    userInfo:null
+  globalData: {
+    userInfo: null,
+    accessToken: "15545-65584-AABA5-41DBA",
+    idNameMap: {
+      21: "MissFortune",
+      28: "Evelynn",
+      127: "Lissandra",
+    }
+  },
+  getAccessToken: function () {
+    return this.globalData.accessToken
   }
 })

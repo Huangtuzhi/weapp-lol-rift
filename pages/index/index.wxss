@@ -23,3 +23,11 @@
   color: chocolate;
   font-size: 20px;
 }
+
+.freeLegend {
+  margin-top: 20px;
+}
+
+.latestBattle {
+  margin-top: 20px;
+}

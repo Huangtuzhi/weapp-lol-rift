@@ -8,13 +8,24 @@ Page({
     nickname: "titus"
   },
   //事件处理函数
-  bindViewTap: function () {
+  // bindViewTap: function () {
+  //   wx.navigateTo({
+  //     url: '../legends/legends'
+  //   })
+  // },
+  bindFreeLegendTap: function () {
     wx.navigateTo({
       url: '../legends/legends'
     })
   },
+  bindBattleListTap: function () {
+    wx.navigateTo({
+      url: '../battles/battles'
+    })
+  },
   onLoad: function () {
     // 加载时更新数据域
+    // console.log(app.getAccessToken())
     this.getAvatarData()
     this.getUserHotData()
   },
@@ -28,7 +39,8 @@ Page({
         iconid: 4,
       },
       header: {
-        'DAIWAN-API-TOKEN': '4006A-E1A71-6CDC6-C17AD'
+        // 'DAIWAN-API-TOKEN': app.getAccessToken(),
+        'DAIWAN-API-TOKEN': app.globalData.accessToken,
       },
       success: function (res) {
         console.log(res.data['data'][0]['return'])
@@ -53,7 +65,7 @@ Page({
         vaid: 17,
       },
       header: {
-        'DAIWAN-API-TOKEN': '4006A-E1A71-6CDC6-C17AD'
+        'DAIWAN-API-TOKEN': app.getAccessToken(),
       },
       success: function (res) {
         console.log(res.data['data'])

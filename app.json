@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/legends/legends"
+    "pages/legends/legends",
+    "pages/battles/battles"
   ],
   "window":{
     "backgroundTextStyle":"light",
