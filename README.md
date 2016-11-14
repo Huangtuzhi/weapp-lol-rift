@@ -33,5 +33,5 @@ Riot Games 不提供国服游戏数据的 API 接口，只能使用[第三方平
 
 ## Demo
 
-![](./assets/demo.gif)
+![](./assets/act.gif)
 
